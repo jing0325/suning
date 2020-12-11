@@ -1,0 +1,62 @@
+// 好货开抢开始
+.main {
+    width: $page_width;
+    background-color: #f2f2f2;
+}
+
+//好货开抢
+.hq-floor {
+    width: $box_width;
+    height: 373px;
+    border: 1px solid #333;
+    margin: 0 auto 20px;
+}
+
+%tj-size {
+    width: $box_width;
+    height: 298px;
+    border: 1px solid #333;
+    margin: 0 auto 20px;
+}
+
+//天天低价
+.tj-floor {
+    @extend %tj-size;
+}
+
+.lx-floor {
+    @extend %tj-size;
+}
+
+.sb-floor {
+    @extend %tj-size;
+}
+
+%channel-size {
+    width: $box_width;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+.channel-wrap {
+    @extend %channel-size;
+    height: 580px;
+}
+
+.channel-title {
+    width: $box_width;
+    height: 80px;
+    background-color: rebeccapurple;
+}
+
+.rec-tab {
+    @extend %channel-size;
+    height: 1689px;
+    background-color: sienna;
+}
+
+.rec-title {
+    width: $box_width;
+    height: 80px;
+    background-color: salmon;
+}

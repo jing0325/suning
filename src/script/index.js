@@ -1,0 +1,1 @@
+const topCloseBtn = document.querySelector('#TOP-CLOSE-BTN');
