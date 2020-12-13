@@ -54,49 +54,366 @@
         <!-- 搜索框盒子 -->
         <!-- 信息需要提交到后端 -->
         <form action="">
-            <!-- 搜索框 -->
+            <!-- 搜索框 问题：js中实现输入内容placeholder中文字消失-->
             <div class="search-keyword-box">
                 <span class="iconfont icon-magnifier"></span>
-                <input type="text" placeholder="双12>
+                <input type="text" placeholder="输入关键字搜索商品/品牌/店铺" />
             </div>
-            <input type=" submit " class="search-keyword-input " value="搜索 ">
+            <input type=" submit " class="search-keyword-input" value="搜索 ">
         </form>
 
     </div>
     <!-- banner -->
     <div class="banner ">
         <!-- banner版心 -->
-        <div class="banner-wrapper "></div>
+        <div class="banner-wrapper ">
+            <!-- 标题盒子 -->
+            <div class="banner-title-box">
+                <div class="sort-title">
+                    <a href="">分类</a>
+                </div>
+                <div class="banner-title-image">
+                    <!-- 分类标题 -->
+
+                    <ul>
+                        <li>
+                            <a href="">
+                                <!-- 苏宁秒杀 -->
+                                <img src="images/suningmiaosha.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <!-- 苏宁国际 -->
+                                <img src="images/suningguoji.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <!-- 苏宁红孩子 -->
+                                <img src="images/haohaizi.png" alt="">
+                            </a>
+                        </li>
+                        <li class="banner-title-image-li">
+                            <a href="">苏宁超市</a>
+                        </li>
+                        <li class="banner-title-image-li">
+                            <a href="">电器城</a>
+                        </li>
+                        <li class="banner-title-image-li">
+                            <a href="">生活家电</a>
+                        </li>
+                        <li class="banner-title-image-li">
+                            <a href="">手机数码</a>
+                        </li>
+                        <li class="banner-title-image-li">
+                            <a href="">金融</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rule-title">
+                    <a href="">公示：协议|规则|证照</a>
+                </div>
+                <!-- 分类 -->
+                <div class="sort-list-box">
+                    <ul class="sort-list-box-ul">
+                        <li class="banner-sort-list-li">
+                            <img src="images/shouji.png" alt="">
+                            <a href="">手机</a>
+                            <em>/</em>
+                            <a href="">运营商</a>
+                            <em>/</em>
+                            <a href="">智能数码</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/jiayongdianqi.png" alt="">
+                            <a href="">家用电器</a>
+                            <em>/</em>
+                            <a href="">房产</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/chuwei.png" alt="">
+                            <a href="">厨卫</a>
+                            <em>/</em>
+                            <a href="">生活家电</a>
+                            <em>/</em>
+                            <a href="">厨具</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/diannaobangong.png" alt="">
+                            <a href="">电脑办公</a>
+                            <em>/</em>
+                            <a href="">相机</a>
+                            <em>/</em>
+                            <a href="">电竞</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/jiaju.png" alt="">
+                            <a href="">家具</a>
+                            <em>/</em>
+                            <a href="">家装</a>
+                            <em>/</em>
+                            <a href="">家纺</a>
+                            <em>/</em>
+                            <a href="">灯具</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/shipin.png" alt="">
+                            <a href="">食品</a>
+                            <em>/</em>
+                            <a href="">酒水</a>
+                            <em>/</em>
+                            <a href="">生鲜</a>
+                            <em>/</em>
+                            <a href="">特产</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/meizhuang.png" alt="">
+                            <a href="">美妆</a>
+                            <em>/</em>
+                            <a href="">个护</a>
+                            <em>/</em>
+                            <a href="">清洁</a>
+                            <em>/</em>
+                            <a href="">宠物</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/muying.png" alt="">
+                            <a href="">母婴</a>
+                            <em>/</em>
+                            <a href="">玩具</a>
+                            <em>/</em>
+                            <a href="">车床</a>
+                            <em>/</em>
+                            <a href="">童装</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/yundong.png" alt="">
+                            <a href="">运动</a>
+                            <em>/</em>
+                            <a href="">户外</a>
+                            <em>/</em>
+                            <a href="">国米</a>
+                            <em>/</em>
+                            <a href="">骑行</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/nvzhuang.png" alt="">
+                            <a href="">女装</a>
+                            <em>/</em>
+                            <a href="">男装</a>
+                            <em>/</em>
+                            <a href="">内衣</a>
+                            <em>/</em>
+                            <a href="">鞋靴</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/xiangbao.png" alt="">
+                            <a href="">箱包</a>
+                            <em>/</em>
+                            <a href="">钟表</a>
+                            <em>/</em>
+                            <a href="">珠宝</a>
+                            <em>/</em>
+                            <a href="">艺术</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/qiche.png" alt="">
+                            <a href="">汽车</a>
+                            <em>/</em>
+                            <a href="">电摩</a>
+                            <em>/</em>
+                            <a href="">汽车用品</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/tushu.png" alt="">
+                            <a href="">图书</a>
+                            <em>/</em>
+                            <a href="">艺术</a>
+                            <em>/</em>
+                            <a href="">原版</a>
+                            <em>/</em>
+                            <a href="">文学</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/yiyaojiankang.png" alt="">
+                            <a href="">医药健康</a>
+                            <em>/</em>
+                            <a href="">计生情趣</a>
+                        </li>
+                        <li class="banner-sort-list-li">
+                            <img src="images/licai.png" alt="">
+                            <a href="">理财</a>
+                            <em>/</em>
+                            <a href="">分期</a>
+                            <em>/</em>
+                            <a href="">便民</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 轮播图 -->
+                <div class="lunbo">
+
+                </div>
+                <!-- 公示 -->
+                <div class="gs-box">
+
+                </div>
+                <!-- 轮播图上面的四个分类 问题:圆角-->
+                <div class="lunbo-link-box">
+                    <div class="link-detail1">
+                        <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20200909-38a6163f785e412bb2c3a78cea49009bd281e4cbfd4f4745.jpg" alt="">
+                    </div>
+                    <div class="link-detail2">
+                        <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20201202-4420f27d81034078bcf056d7274a01e7ebe35aeb879d4a2a.jpg" alt="">
+                    </div>
+                    <div class="link-detail3">
+                        <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20201211-3ea9ec45f7a3462e98035d62c69efd33a9881a2b87114fc8.jpg" alt="">
+                    </div>
+                    <div class="link-detail4">
+                        <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20200928-ba4b104ede86473390adeb0767f40d241695670be9fc41cf.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="main ">
+    <div class="main">
         <!-- 好货开抢 -->
-        <div class="hq-floor ">好货开抢</div>
-        <div class="tj-floor ">
+        <div class="hq-floor">
+            <div class="hq-floor-wrap">
+                <img src="https://image2.suning.cn/uimg/cms/img/160767477552136253.png" alt="" class="banner-bg">
+                <div class="hq-floor-wrap2">
+                    <ul>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000012008656554.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">厨卫电器</p>
+                            <p class="hq-floor-p2">每满300减40</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0070167435000000000649306951.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">童书节</p>
+                            <p class="hq-floor-p2">礼物清单</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000010859473113.jpg?ver=2001&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">烹饪炊具</p>
+                            <p class="hq-floor-p2">爆款9.9起</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0070168109000000000649629608.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">服装会场</p>
+                            <p class="hq-floor-p2">大牌2折起</p>
+                        </li>
+                        <li class="hq-floor-li cancel-margin-right">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000012089413398.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">生鲜疯抢</p>
+                            <p class="hq-floor-p2">每满139减40</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000010570567977.jpg?ver=2020&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">生活家电</p>
+                            <p class="hq-floor-p2">好货5折抢</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000000520500390.jpg?ver=2001&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">服务超值购</p>
+                            <p class="hq-floor-p2">27元洗冬衣</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000010547872225.jpg?ver=2045&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">电视家影</p>
+                            <p class="hq-floor-p2">至高24期免息</p>
+                        </li>
+                        <li class="hq-floor-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000012154223371.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">电脑爆款</p>
+                            <p class="hq-floor-p2">至高24期免息</p>
+                        </li>
+                        <li class="hq-floor-li cancel-margin-right">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0000000000000000000628929989.jpg?ver=2000&format=400w_400h_4e" alt="">
+                            <p class="hq-floor-p1">家装建材</p>
+                            <p class="hq-floor-p2">每满300减40</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tj-floor">
             <!-- 天天低价 -->
-            <div class="tj ">天天低价</div>
+            <div class="tj ">
+                <!-- 天天低价标题部分 -->
+                <div class="tj-floor-title">
+                    <a href="">
+                        <img src="https://image4.suning.cn/uimg/cms/img/159503754048284777.png" alt="">
+                    </a>
+                    <span>距离下场</span>
+                    <!-- 倒计时 -->
+                    <p class="tj-floor-timer">
+                        <span class="tj-floor-timer-sp1"></span>
+                        <em>:</em>
+                        <span class="tj-floor-timer-sp2"></span>
+                        <em>:</em>
+                        <span class="tj-floor-timer-sp3"></span>
+                    </p>
+                    <ul class="tj-floor-ul">
+                        <li>15:00场</li>
+                        <li>20:00场</li>
+                    </ul>
+                </div>
+                <!-- 天天低价list 后台数据渲染-->
+                <div class="tj-floor-lists">
+                    <ul>
+                        <li class="tj-floor-lists-li">
+                            <img src="https://imgservice.suning.cn/uimg1/sniss/improve/sfWHWqsq1ainGxUjtLudGg.jpg" alt="" class="tj-floor-lists-img">
+                            <p class="tj-floor-lists-title">百消丹药业阿胶红糖姜茶10g*10袋/盒女生生理期饮品大姨妈饮品可搭配红糖块</p>
+                            <p class="tj-floor-lists-price"><span class="tj-floor-lists-price1">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">9.90</em>
+                            </span><span class="tj-floor-lists-price2">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">29.90</em>
+                            </span></p>
+                            <p class="tj-floor-lists-line1"><span class="tj-floor-lists-line2"></span></p>
+                            <p class="tj-floor-lists-num">已抢48%</p>
+                        </li>
+                        <li class="tj-floor-lists-li">
+                            <img src="https://image2.suning.cn/uimg/cms/img/159524463097698057.jpg" alt="" class="tj-floor-lists-img">
+                            <p class="tj-floor-lists-title">乔欣直播推荐【大白牙膏】狮王(LION) WHITE&WHITE洁白牙膏 150g 口气清新</p>
+                            <p class="tj-floor-lists-price"><span class="tj-floor-lists-price1">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">12.90</em>
+                            </span><span class="tj-floor-lists-price2">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">14.9</em>
+                            </span></p>
+                            <p class="tj-floor-lists-line1"><span class="tj-floor-lists-line2"></span></p>
+                            <p class="tj-floor-lists-num">已抢53%</p>
+                        </li>
+                        </li>
+                        <li class="tj-floor-lists-li">
+                            <img src="https://imgservice.suning.cn/uimg1/sniss/improve/-ikthcaHOe0HXnSofupkDQ.jpg" alt="" class="tj-floor-lists-img">
+                            <p class="tj-floor-lists-title">正版现代汉语词典第7版最新版商务印书馆新华词典字典成语词典第七版古代汉语大词典辞典</p>
+                            <p class="tj-floor-lists-price"><span class="tj-floor-lists-price1">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">85.00</em>
+                            </span><span class="tj-floor-lists-price2">
+                                <i>￥</i>
+                                <em class="tj-floor-lists-em">109</em>
+                            </span></p>
+                            <p class="tj-floor-lists-line1"><span class="tj-floor-lists-line2"></span></p>
+                            <p class="tj-floor-lists-num">已抢56%</p>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <!-- 苏宁秒杀 -->
-            <div class="sx ">苏宁秒杀</div>
-        </div>
-        <div class="lx-floor ">
-            <!-- 领券中心 -->
-            <div class="lx ">领券中心</div>
-            <!-- 推荐榜单 -->
-            <div class="td ">推荐榜单</div>
-        </div>
-        <div class="sb-floor ">
-            <!-- 苏宁直播 -->
-            <div class="sb ">苏宁直播</div>
-            <div class="sg ">苏宁拼购</div>
         </div>
         <!-- 频道广场 -->
         <div class="channel-wrap ">
-            <div class="channel-title ">频道广场</div>
-            <div class="channel-details "></div>
-        </div>
-        <div class="rec-tab ">
-            <!-- 为你推荐 -->
-            <div class="rec-title ">为你推荐</div>
-            <div class="rec-details "></div>
+
         </div>
     </div>
     <!-- 底部第一部分 -->

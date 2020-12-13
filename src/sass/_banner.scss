@@ -1,12 +1,171 @@
+// banner部分
 .banner {
     width: $page_width;
-    height: 476px;
-    background-color: #e13301;
+    height: 514px;
+    // background-color: #e13301;
+    margin-bottom: 30px;
 }
 
+// banner版心
 .banner-wrapper {
     width: $box_width;
-    height: 476px;
-    background-color: papayawhip;
+    height: 514px;
+    // background-color: papayawhip;
     margin: 0 auto;
+    position: relative;
+}
+
+.banner-title-box {
+    width: 100%;
+    height: 38px;
+}
+
+//分类标题
+.sort-title {
+    width: 170px;
+    float: left;
+    text-align: center;
+}
+
+.sort-title a {
+    display: block;
+    width: 170px;
+    height: 38px;
+    background-color: #ff8000;
+    color: #fff;
+    line-height: 38px;
+}
+
+// banner导航栏
+.banner-title-image {
+    float: left;
+    height: 38px;
+    // margin-right: 24px;
+}
+
+//banner导航栏标题
+.banner-title-image li {
+    float: left;
+    line-height: 38px;
+    text-align: center;
+}
+
+.banner-title-image li a img {
+    width: 110px;
+    height: 38px;
+}
+
+.banner-title-image .banner-title-image-li {
+    width: 95px;
+    height: 38px;
+}
+
+.banner-title-image .banner-title-image-li a {
+    font-size: 15px;
+    color: #333;
+}
+
+//公示标题
+.rule-title {
+    float: left;
+}
+
+.rule-title a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #4A4A48;
+    border-radius: 12px 12px 0 0;
+    color: #C0AA7E;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.rule-title a img {
+    width: 100px;
+    height: 38px;
+}
+
+//分类
+.sort-list-box-ul {
+    position: absolute;
+    top: 38px;
+    left: 0;
+}
+
+.sort-list-box .banner-sort-list-li {
+    font-size: $font12;
+    height: 31px;
+    width: 170px;
+}
+
+//分类小图标
+.sort-list-box .banner-sort-list-li img {
+    width: 16px;
+    height: 16px;
+}
+
+.sort-list-box .banner-sort-list-li a {
+    line-height: 31px;
+    font-size: 13px;
+}
+
+// 轮播图
+.lunbo {
+    width: 794px;
+    height: 476px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 38px;
+    left: 180px;
+}
+
+.gs-box {
+    width: 200px;
+    height: 476px;
+    background-color: rosybrown;
+    position: absolute;
+    top: 38px;
+    right: 16px;
+}
+
+//轮播图上面的四个分类
+.lunbo-link-box {
+    position: absolute;
+    top: 396px;
+    left: 170px;
+}
+
+%lunbo-link-size {
+    width: 194px;
+    height: 112px;
+    background-color: #fff;
+    border-radius: 12px;
+    float: left;
+}
+
+.lunbo-link-box .link-detail1 {
+    @extend %lunbo-link-size;
+    margin-left: 12px;
+}
+
+.lunbo-link-box .link-detail2 {
+    @extend %lunbo-link-size;
+    margin-left: 5px;
+}
+
+.lunbo-link-box .link-detail3 {
+    @extend %lunbo-link-size;
+    margin-left: 5px;
+}
+
+.lunbo-link-box .link-detail4 {
+    @extend %lunbo-link-size;
+    margin-left: 5px;
+}
+
+.lunbo-link-box img {
+    width: 194px;
+    height: 112px;
 }

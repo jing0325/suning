@@ -102,13 +102,14 @@
 
 .search-keyword-box input {
     width: 340px;
-    color: #eee;
+    color: #333;
     border: none;
+    outline: none; //去掉输入内容时input的外边框
 }
 
 .search-keyword-input {
     width: 120px;
-    height: 46px;
+    height: 44px;
     background-color: #ff8000;
     cursor: pointer;
     border: none;
@@ -117,4 +118,5 @@
     font-size: 18px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
 }
