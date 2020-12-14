@@ -12,14 +12,14 @@ body {
 //好货开抢
 .hq-floor {
     width: $page_width;
-    height: 596px;
+    // height: 596px;
     overflow: hidden;
 }
 
 .hq-floor-wrap {
     width: $box_width;
     margin: 0 auto;
-    height: 100%;
+    // height: 100%;
     position: relative;
 }
 
@@ -93,12 +93,10 @@ body {
 //天天低价
 .tj-floor {
     width: $box_width;
-    // clear: both;
     height: 305px;
     margin: 0 auto;
-    // background-color: antiquewhite;
     margin-top: 20px;
-    border: 1px solid #333;
+    // border: 1px solid #333;
     padding-bottom: 20px;
 }
 
@@ -252,4 +250,214 @@ body {
     margin-left: 10px;
     color: #999;
     font-size: 12px;
+}
+
+.sx-title img {
+    width: 106px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+
+.sx-title span {
+    display: block;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+    float: left;
+    margin-left: 10px;
+}
+
+.sx .sx-title {
+    width: 590px;
+    height: 60px;
+    // background-color: antiquewhite;
+}
+
+.sx-lists-li {
+    width: 170px;
+    height: 238px;
+    // background-color: palegoldenrod;
+    float: left;
+    margin-left: 19px;
+}
+
+.sx-lists-img {
+    width: 150px;
+    height: 150px;
+    background-color: peru;
+    margin: 0 10px 10px 10px;
+}
+
+.sx-lists-title {
+    width: 170px;
+    height: 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: left;
+    word-break: break-all;
+    font-weight: normal;
+}
+
+.sx-lists-price {
+    height: 21px;
+    margin: 4px 4px 4px 0;
+    overflow: hidden;
+}
+
+.sx-lists-price1 {
+    float: left;
+    line-height: 21px;
+    color: #F30;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sx-lists-price2 {
+    float: left;
+    line-height: 16px;
+    color: #999;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 3px;
+    text-decoration: line-through;
+}
+
+.sx-lists-num {
+    float: left;
+    margin-left: 10px;
+    color: #999;
+    font-size: 12px;
+}
+
+.channel-wrap {
+    width: $box_width;
+    margin: 0 auto;
+}
+
+.channel-wrap img {
+    width: $box_width;
+    height: 80px;
+}
+
+//频道广场导航栏
+.channel-tab-nav {
+    width: $box_width;
+    height: 70px;
+    // background-color: #f2f2f2;
+}
+
+.channel-tab-nav-li {
+    float: left;
+    width: 170px;
+    height: 76px;
+    text-align: center;
+}
+
+.channel-tab-nav-title {
+    font-size: 17px;
+    font-weight: bold;
+    height: 24px;
+    letter-spacing: .5px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.channel-tab-nav-words span {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #999;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+// .channel-tab-nav-li:hover .channel-tab-nav-title {
+//     color: #ff8000;
+// }
+// .channel-tab-nav-li:hover span {
+//     color: #fff;
+//     background-color: #ff8000;
+// }
+.channel-tab-details-ul .channel-tab-details-li {
+    width: 230px;
+    height: 330px;
+    margin: 0 8px 10px 0;
+    float: left;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.channel-tab-details-ul .channel-tab-details-a {
+    display: block;
+    width: 230px;
+    height: 266px;
+}
+
+.channel-tab-details-ul .channel-tab-details-img {
+    width: 190px;
+    height: 190px;
+    margin: 20px 20px 10px;
+}
+
+.channel-tab-details-ul .channel-tab-details-title {
+    width: 190px;
+    height: 40px;
+    margin: 0 0 8px 20px;
+    overflow: hidden;
+    color: #333;
+    word-break: break-all;
+    font-size: $font16;
+    font: inherit;
+    font: 14px/20px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+
+.channel-tab-details-ul .channel-tab-details-p {
+    width: 190px;
+    height: 18px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.channel-tab-details-ul .channel-tab-details-sale {
+    display: block;
+    float: left;
+    padding: 0 2px;
+    height: 16px;
+    color: #ff8000;
+    font: 14px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+    background: #fff;
+    border: 1px solid #ff8000;
+    margin-right: 7px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.channel-tab-details-p1 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.channel-tab-details-saleprice {
+    line-height: 28px;
+    color: #F30;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.channel-tab-details-price {
+    font-size: 13px;
+    line-height: 18px;
+    color: #999;
+    margin-left: 6px;
+    text-decoration: line-through;
 }

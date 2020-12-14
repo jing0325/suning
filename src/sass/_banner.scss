@@ -87,7 +87,7 @@
     height: 38px;
 }
 
-//分类
+//二级菜单
 .sort-list-box-ul {
     position: absolute;
     top: 38px;
@@ -109,6 +109,26 @@
 .sort-list-box .banner-sort-list-li a {
     line-height: 31px;
     font-size: 13px;
+}
+
+.sort-list-box .banner-sort-list-li a:hover {
+    color: orange;
+}
+
+.sort-list-box .banner-sort-list-li.active {
+    background-color: #eee;
+}
+
+.sort-list-details {
+    width: 989px;
+    height: 476px;
+    background-color: #eee;
+    position: absolute;
+    top: 38px;
+    left: 170px;
+    display: none;
+    padding: 20px;
+    z-index: 100;
 }
 
 // 轮播图
@@ -168,4 +188,59 @@
 .lunbo-link-box img {
     width: 194px;
     height: 112px;
+}
+
+.lunbo {
+    width: 794px;
+    height: 476px;
+    position: relative;
+}
+
+.lunbo ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.lunbo .lunbo-nav {
+    position: absolute;
+    left: 254px;
+    bottom: 136px;
+}
+
+.lunbo-item {
+    display: inline-block;
+    margin-left: 8px;
+    width: 20px;
+    height: 4px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.lunbo-nav {
+    position: absolute;
+    bottom: 130px;
+    left: 246px;
+}
+
+.lunbo-nav .active {
+    background-color: lawngreen;
+}
+
+.nav-left-btn {
+    position: absolute;
+    width: 28px;
+    height: 72px;
+    top: 180px;
+    left: 0;
+    background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020112301)-1152px 0;
+}
+
+.nav-right-btn {
+    position: absolute;
+    width: 28px;
+    height: 72px;
+    top: 180px;
+    right: 0px;
+    background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020112301)-1152px -72px;
 }

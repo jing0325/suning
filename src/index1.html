@@ -10,6 +10,8 @@
     <!-- 放大镜字体图标 -->
     <link rel="stylesheet" href="fonts/font_6lp80c09c2u/iconfont.css">
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+
 </head>
 
 <body>
@@ -74,7 +76,6 @@
                 </div>
                 <div class="banner-title-image">
                     <!-- 分类标题 -->
-
                     <ul>
                         <li>
                             <a href="">
@@ -250,10 +251,99 @@
                             <a href="">便民</a>
                         </li>
                     </ul>
+                    <!-- 二级菜单 -->
+                    <div class="sort-list-details">
+                        <!-- 手机详情 -->
+                        <div class="sort-list-tel-details">
+                            <a href="">手机数码</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">家用电器</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">厨卫电器</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">电脑办公</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">家具家装</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">食品酒水</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">美妆个护</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">母婴玩具</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">运动户外</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">女装男装</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">箱包钟表</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">汽车用品</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">图书文学</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">医药健康</a>
+                        </div>
+                        <div class="sort-list-tel-details">
+                            <a href="">理财分期</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- 轮播图 -->
                 <div class="lunbo">
-
+                    <ul>
+                        <li style="opacity: 1;">
+                            <img src="https://image5.suning.cn/uimg/cms/img/160784775516115110.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="
+                            https://oss.suning.com/aps/aps_learning/iwogh/2020/12/12/17/iwoghBannerPicture/50ecf69bcf9247dfbe9ae33bb51dac83.png?format=is_3le" alt="">
+                        </li>
+                        <li>
+                            <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20201213-1308872f48fa4f58a4dba69700a62851487324534fce4fd2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="https://oss.suning.com/aps/aps_learning/iwogh/2020/12/12/17/iwoghBannerPicture/1c6ccec0c13e4483aff27aa67ea57bcc.png?format=is_3le" alt="">
+                        </li>
+                        <li>
+                            <img src="https://oss.suning.com/aps/aps_learning/iwogh/2020/12/12/17/iwoghBannerPicture/94ae2d016c2a480d93a2fe1f129bb72b.png?format=is_3le" alt="">
+                        </li>
+                        <li>
+                            <img src="
+                            https://oss.suning.com/aps/aps_learning/iwogh/2020/12/12/17/iwoghBannerPicture/6c796ed2e59146d9aca217c8271d6649.png?format=is_3le" alt="">
+                        </li>
+                        <li>
+                            <img src="
+                            https://oss.suning.com/adpp/creative_kit/material/picture/20201211-527565680aff49628aa7705ce380f3223374fc870b0a4de1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="https://oss.suning.com/adpp/creative_kit/material/picture/20201211-6e3b30d9fe8d4029b92323e875d3c928e76113d975db4ba6.jpg" alt="">
+                        </li>
+                    </ul>
+                    <div class="lunbo-nav">
+                        <a href="javascript:;" class="lunbo-item active"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                        <a href="javascript:;" class="lunbo-item"></a>
+                    </div>
+                    <a href="javascript:;" class="nav-left-btn"></a>
+                    <a href="javascript:;" class="nav-right-btn"></a>
                 </div>
                 <!-- 公示 -->
                 <div class="gs-box">
@@ -352,9 +442,9 @@
                     <!-- 倒计时 -->
                     <p class="tj-floor-timer">
                         <span class="tj-floor-timer-sp1"></span>
-                        <em>:</em>
+                        <!-- <em>:</em> -->
                         <span class="tj-floor-timer-sp2"></span>
-                        <em>:</em>
+                        <!-- <em>:</em> -->
                         <span class="tj-floor-timer-sp3"></span>
                     </p>
                     <ul class="tj-floor-ul">
@@ -362,7 +452,7 @@
                         <li>20:00场</li>
                     </ul>
                 </div>
-                <!-- 天天低价list 后台数据渲染-->
+                <!-- 天天低价list-->
                 <div class="tj-floor-lists">
                     <ul>
                         <li class="tj-floor-lists-li">
@@ -409,20 +499,112 @@
                     </ul>
                 </div>
             </div>
-            <!-- 苏宁秒杀 -->
+            <div class="sx">
+                <!-- 苏宁秒杀 -->
+                <!-- 苏宁秒杀标题部分 -->
+                <div class="sx-title">
+                    <a href="">
+                        <img src="https://image3.suning.cn/uimg/cms/img/159503759619041498.png" alt="">
+                    </a>
+                    <span>抢品质好货</span>
+                    <span>
+                        <a href="">更多</a>
+                    </span>
+                </div>
+
+                <div class="sx-lists">
+                    <ul>
+                        <li class="sx-lists-li">
+                            <img src="https://imgservice.suning.cn/uimg1/sniss/improve/LeCKS6wxTtYx8ZN8p5acdA.jpg" alt="" class="sx-lists-img">
+                            <p class="sx-lists-title">康夫（CONFU）电吹风机KF-3139绿色大功率家用便携 大风力快干 恒温护发 过热保护风筒</p>
+                            <p class="sx-lists-price"><span class="sx-lists-price1">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">69.00</em>
+                                </span><span class="sx-lists-price2">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">119</em>
+                                </span></p>
+                            <p class="sx-lists-line1"><span class="sx-lists-line2"></span></p>
+                            <p class="sx-lists-num">月销1528件</p>
+                        </li>
+                        <li class="sx-lists-li">
+                            <img src="https://imgservice.suning.cn/uimg1/sniss/improve/0_qd6oPgJhqmhcxga-k8Iw.jpg" alt="" class="sx-lists-img">
+                            <p class="sx-lists-title">【第二件减2元】麦德优蛋黄酥雪媚娘海鸭蛋7枚装 休闲食品早餐糕点零食网红美食小吃酥类糕点</p>
+                            <p class="sx-lists-price"><span class="sx-lists-price1">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">9.90</em>
+                                </span><span class="sx-lists-price2">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">19.9</em>
+                                </span></p>
+                            <p class="sx-lists-line1"><span class="sx-lists-line2"></span></p>
+                            <p class="sx-lists-num">月销19956件</p>
+                        </li>
+                        </li>
+                        <li class="sx-lists-li">
+                            <img src="https://image.suning.cn/uimg/b2c/qrqm/0070208130000000010466903684.jpg?ver=2007" alt="" class="sx-lists-img">
+                            <p class="sx-lists-title">正版现代汉语词典第7版最新版商务印书馆新华词典字典成语词典第七版古代汉语大词典辞典</p>
+                            <p class="sx-lists-price"><span class="sx-lists-price1">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">85.00</em>
+                                </span><span class="sx-lists-price2">
+                                    <i>￥</i>
+                                    <em class="sx-lists-em">109</em>
+                                </span></p>
+                            <p class="sx-lists-line1"><span class="sx-lists-line2"></span></p>
+                            <p class="sx-lists-num">月销17135件</p>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- 频道广场 -->
         <div class="channel-wrap ">
+            <img src="https://image2.suning.cn/uimg/cms/img/159503836368389136.png" alt="">
+            <!-- 频道广场导航栏 -->
+            <div class="channel-tab-nav">
+                <ul>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">精选</p>
+                        <p class="channel-tab-nav-words"><span>猜你喜欢</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">品质空调</p>
+                        <p class="channel-tab-nav-words"><span>知您冷暖</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">商用空调</p>
+                        <p class="channel-tab-nav-words"><span>爱上深呼吸</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">视觉盛宴</p>
+                        <p class="channel-tab-nav-words"><span>蜗居不无聊</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">精选冰箱</p>
+                        <p class="channel-tab-nav-words"><span>锁鲜有营养</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">洗衣必备</p>
+                        <p class="channel-tab-nav-words"><span>速度与激情</span></p>
+                    </li>
+                    <li class="channel-tab-nav-li">
+                        <p class="channel-tab-nav-title">吃鸡装备</p>
+                        <p class="channel-tab-nav-words"><span>游戏杀手锏</span></p>
+                    </li>
+                </ul>
 
+            </div>
+            <!-- 渲染页面 -->
+            <div class="channel-tab-details">
+                <ul class="channel-tab-details-ul">
+                </ul>
+            </div>
         </div>
     </div>
-    <!-- 底部第一部分 -->
-    <div class="footer-one ">
-        <!-- 底部第一部分版心 -->
-        <div class="footer-one-wrap "></div>
-    </div>
-    <!-- 底部第二部分 -->
-    <div class="footer-two "></div>
 </body>
 
 </html>
+<!-- 首页js -->
+<script src="script/index.js"></script>
