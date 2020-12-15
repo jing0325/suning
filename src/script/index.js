@@ -126,7 +126,7 @@
 
     //tab切换内容更改
     $.ajax({
-        url: 'http://localhost/dashboard/sunning/php/suningjson.php',
+        url: 'http://10.31.161.110/dashboard/sunning/php/suningjson.php',
         dataType: 'json'
     }).done(function(data) {
         let arr1 = [];
@@ -176,7 +176,6 @@
             </li>`;
         });
         $detailsUl.html(strHtml);
-
 
         $channelLi.on('mouseover', function() {
             let $this = $(this);

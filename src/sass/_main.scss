@@ -356,6 +356,7 @@ body {
     width: 170px;
     height: 76px;
     text-align: center;
+    // display: none;
 }
 
 .channel-tab-nav-title {
@@ -380,13 +381,6 @@ body {
     border-radius: 3px;
 }
 
-// .channel-tab-nav-li:hover .channel-tab-nav-title {
-//     color: #ff8000;
-// }
-// .channel-tab-nav-li:hover span {
-//     color: #fff;
-//     background-color: #ff8000;
-// }
 .channel-tab-details-ul .channel-tab-details-li {
     width: 230px;
     height: 330px;
