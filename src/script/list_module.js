@@ -25,7 +25,8 @@
             `;
         });
         $goodsUl.html($strHtml);
-
+        $arr_pre = [];
+        $arr = [];
         //将li添加到数组中
         $('.goods-details li').each(function(index, element) {
             $arr_pre[index] = $(this);
@@ -64,6 +65,8 @@
                     });
                     $goodsUl.html($strHtml);
                     //将li添加到数组中
+                    $arr_pre = [];
+                    $arr = [];
                     $('.goods-details li').each(function(index, element) {
                         $arr_pre[index] = $(this);
                         $arr[index] = $(this);
