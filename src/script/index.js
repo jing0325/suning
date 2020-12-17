@@ -203,6 +203,23 @@
 
     });
 
+    //检测是否用户已经登录
+    if (localStorage.getItem('telnumber')) {
+        alert(1);
+        $('.admin').show();
+        $('#login-btn').hide();
+        $('#reg-btn').hide();
+        $('.admin span').html(localStorage.getItem('telnumber'));
+    }
+
+    //退出登录 - 删除本地存储
+    $('.admin a').on('click', function() {
+        $('.admin').hide();
+        $('#login-btn').show();
+        $('#reg-btn').show();
+        localStorage.removeItem('telnumber');
+    });
+
 
 
 }(jQuery);

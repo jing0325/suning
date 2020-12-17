@@ -43,6 +43,27 @@
             float: left;
             @extend %rec-size;
         }
+        .admin {
+            float: left;
+            @extend %rec-size;
+            width: 220px;
+            height: 35px;
+        }
+        .admin .title {
+            float: left;
+            @extend %rec-size;
+            margin-left: 10px;
+        }
+        .admin span {
+            float: left;
+            @extend %rec-size;
+        }
+        .admin a {
+            float: right;
+            @extend %rec-size;
+            width: 30px;
+            margin-left: 30px;
+        }
         .new-rec-tab-left a:hover {
             color: orange;
         }

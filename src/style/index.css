@@ -148,7 +148,7 @@ table {
   height: 15px;
   background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020112301) -241px -145px; }
 
-.new-rec-tab .new-rec-tab-wrap .new-rec-tab-left a, .new-rec-tab .new-rec-tab-wrap .new-rec-tab-right a {
+.new-rec-tab .new-rec-tab-wrap .new-rec-tab-left a, .new-rec-tab .new-rec-tab-wrap .admin, .new-rec-tab .new-rec-tab-wrap .admin .title, .new-rec-tab .new-rec-tab-wrap .admin span, .new-rec-tab .new-rec-tab-wrap .admin a, .new-rec-tab .new-rec-tab-wrap .new-rec-tab-right a {
   color: #666;
   font-size: 12px;
   display: block;
@@ -164,6 +164,19 @@ table {
     margin: 0 auto; }
     .new-rec-tab .new-rec-tab-wrap .new-rec-tab-left a {
       float: left; }
+    .new-rec-tab .new-rec-tab-wrap .admin {
+      float: left;
+      width: 220px;
+      height: 35px; }
+    .new-rec-tab .new-rec-tab-wrap .admin .title {
+      float: left;
+      margin-left: 10px; }
+    .new-rec-tab .new-rec-tab-wrap .admin span {
+      float: left; }
+    .new-rec-tab .new-rec-tab-wrap .admin a {
+      float: right;
+      width: 30px;
+      margin-left: 30px; }
     .new-rec-tab .new-rec-tab-wrap .new-rec-tab-left a:hover {
       color: orange; }
     .new-rec-tab .new-rec-tab-wrap .new-rec-tab-right {

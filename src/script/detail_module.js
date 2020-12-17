@@ -6,7 +6,7 @@ define(['jcookie'], () => {
             let $sid = location.search.substring(1).split('=')[1];
             //如果没有传，默认为1
             if (!$sid) {
-                $sid = 1;
+                $sid = '1';
             }
             //将sid的值传给后端,后端返回对应sid的数据
             $.ajax({
@@ -16,14 +16,15 @@ define(['jcookie'], () => {
                 },
                 dataType: 'json'
             }).done(function(data) {
+                console.log(data);
                 $('#pic').attr('src', data.url);
                 $('.item-name').html(data.title);
                 $('.item-desc').html(data.title);
-                $('.ckPrice-sp1').html(data.sailnumber);
+                $('.ckPrice-sp1').html(data.price);
                 $('.ckPrice-sp2').html(data.price);
                 $('#bPic').attr('src', data.url);
                 //渲染放大镜下面的小图
-                let $picurl = data.piclisturl.split(','); //将数据转换成数组。
+                let $picurl = data.urls.split(','); //将数据转换成数组。
                 let $strhtml = '<ul>';
                 const $list = $('#list');
                 $.each($picurl, function(index, value) {
@@ -89,30 +90,37 @@ define(['jcookie'], () => {
 
             //加入购物车
             //1.准备两个数组。存储sid和num
-            let $arrSid = [];
-            let $arrNum = [];
+            let arrSid = [];
+            let arrNum = [];
 
             function getcookietoarray() {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
-                    $arrSid = $.cookie('cookiesid').split(',');
-                    $arrNum = $.cookie('cookienum').split(',');
+                    arrSid = $.cookie('cookiesid').split(',');
+                    arrNum = $.cookie('cookienum').split(',');
+                } else {
+                    arrSid = [];
+                    arrNum = [];
                 }
             }
 
-            $('#addCart').on('click', () => {
+            $('.gwc-box a').on('click', function() {
                 getcookietoarray();
                 //当前的详情页面的sid在数组中不存在，表示第一次加入购物车
-                if ($.inArray($sid, $arrSid) === -1) {
-                    $arrSid.push($sid); //把当前的sid存下来
-                    $.cookie('cookiesid', $arrSid, { expires: 10, path: '/' }); //sid以数组的形式保存到cookie中
-                    $arrNum.push($('#count').val()); //获取加入购物车的商品数量，加到数量数组中
-                    $.cookie('cookienum', $arrNum, { expires: 10, path: '/' }); //保存到cookie中
+                if ($.inArray($sid, arrSid) === -1) {
+                    arrSid.push($sid); //把当前的sid存下来
+                    console.log($sid);
+                    console.log(arrSid);
+                    $.cookie('cookiesid', arrSid, { expires: 10, path: '/' }); //sid以数组的形式保存到cookie中
+                    arrNum.push($('#count').val()); //获取加入购物车的商品数量，加到数量数组中
+                    $.cookie('cookienum', arrNum, { expires: 10, path: '/' }); //保存到cookie中
+                    alert('加入购物车成功！');
                 } else { //如果不是第一次添加
                     // 通过当前商品的sid在数组中的位置，获取对应的数量
-                    let $index = $.inArray($sid, $arrSid);
+                    let $index = $.inArray($sid, arrSid);
                     // 重新给num赋值
-                    $arrNum[$index] = parseInt($arrNum[$inde] + parseInt($('#count').val()));
-                    $.cookie('cookienum', $arrNum, { expires: 10, path: '/' }); //保存到cookie中
+                    arrNum[$index] = parseInt(arrNum[$index]) + parseInt($('#count').val());
+                    $.cookie('cookienum', arrNum, { expires: 10, path: '/' }); //保存到cookie中
+                    alert('加入购物车成功！');
                 }
             })
 

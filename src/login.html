@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用户登录</title>
+    <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
 </head>
 
 <body>
@@ -21,23 +23,24 @@
             <a href="" class="single-link"></a>
             <div class="login-form">
                 <div class="login-tab">
-                    <a href="" class="tab-item on"><span>扫码登录</span><i></i></a>
+                    <a href="" class="tab-item on"><span>账户登录</span><i></i></a>
                 </div>
-                <div class="user-box">
-                    <div class="input-box" id="showErrorUsernameDiv">
-                        <input id="userName" type="text" autocomplete="off" value="" tabindex="1" maxlength="64" placeholder="用户名/手机/邮箱">
-                        <!-- <label style="display: block;">用户名/手机/邮箱</label> -->
-                        <i class="icon username-icon"></i>
+                <form action="" method="post">
+                    <div class="user-box">
+                        <div class="input-box" id="showErrorUsernameDiv">
+                            <input id="userName" type="text" autocomplete="off" value="" tabindex="1" maxlength="64" placeholder="手机号">
+                            <i class="icon username-icon"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="pwd-box">
-                    <div class="input-box" id="showErrorPwdDiv">
-                        <input id="password" type="password" autocomplete="off" tabindex="2" placeholder="密码">
-                        <i class="icon password-icon"></i>
+                    <div class="pwd-box">
+                        <div class="input-box" id="showErrorPwdDiv">
+                            <input id="password" type="password" autocomplete="off" tabindex="2" placeholder="密码">
+                            <i class="icon password-icon"></i>
+                        </div>
                     </div>
-                </div>
-                <a href="" class="login-submit">登 录</a>
-                <a href="" class="registry-entry">注册有惊喜</a>
+                    <input type="button" value="登录" id="login">
+                </form>
+                <a href="registry.html" class="registry-entry">注册有惊喜</a>
             </div>
         </div>
     </div>

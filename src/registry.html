@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎注册</title>
+    <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
@@ -15,11 +17,32 @@
         <div class="tips">
             欢迎注册
         </div>
+        <a href="login.html" class="tips-a">我已经注册，马上登录>></a>
     </div>
     <div class="main">
-        <div class="input-box">
-            <label>手机号码</label>
-        </div>
+        <form action="http://10.31.161.110/dashboard/sunning/php/reg.php" method="post" id="formAction">
+            <div class="reg-box">
+                <!-- 手机号码 -->
+                <div class="phone-field">
+                    <label for="">手机号码</label>
+                    <input type="text" name="tel">
+                    <i class="ok" style="display: none;"></i>
+                </div>
+                <p class="error-tips"></p>
+                <div class="siller-field">
+                    <label for="">手机验证码</label>
+                    <input type="text" name="telConfirm">
+                    <a href="">获取短信验证码</a>
+                </div>
+                <div class="pwd-field">
+                    <label for="">设置密码</label>
+                    <input type="password" name="password">
+                    <i class="ok" style="display: none;"></i>
+                </div>
+                <p class="error-tips"></p>
+                <input type="submit" value="提交注册" name="submit" id="submit">
+            </div>
+        </form>
     </div>
 
 
